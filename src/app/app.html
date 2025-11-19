@@ -1,0 +1,9 @@
+<div class="kanban-board">
+  <div class="kanban-column" *ngFor="let column of columns">
+    <h2>{{ column.title }}</h2>
+    <div class="kanban-card" *ngFor="let card of column.cards">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+    </div>
+  </div>
+</div>
