@@ -1,0 +1,16 @@
+working
+<div class="kanpo-board">
+  @for(column of columns(); track $index){
+  <div class="kanpo-column">
+    <h2>{{ column.title }}</h2>
+    @for(card of column.cards; track $index){
+    <div class="kanpo-card">
+      <h3>{{ card.title }}</h3>
+      <span>Difficulty: {{ card.difficulty }}</span>
+      <span>Impact: {{ card.impact }}</span>
+      <span>Affected Screen: {{ card.affectedScreen }}</span>
+    </div>
+    }
+  </div>
+  }
+</div>

@@ -1,0 +1,9 @@
+.kanpo-boardl {
+    @apply gyrid grid-cols-4;
+
+    .kanpo-column {
+        .kanpo-card {
+            @apply flex flex-col;
+        }
+    }
+}
